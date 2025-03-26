@@ -27,8 +27,8 @@ const sampleRecipes = [
         image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc9AIvAc6dkD5GTVhVASi91F4Jc4n7AbOFhw&s',
         description: 'Simple yet delicious avocado toast with a sprinkle of chili flakes.',
         ingredients: '2 slices bread\n1 ripe avocado\n1 tbsp olive oil\nSalt and pepper\nChili flakes',
-        instructions: '1. Toast the bread\n2. Mash the avocado\n3. Spread on toast\n4. Season to taste',
-        prepTime: 10,
+        instructions: 'Cut the avocado in half and carefully remove its stone, then scoop out the flesh into a bowl. Squeeze in the lemon juice then mash with a fork to your desired texture. Season to taste with sea salt, black pepper and chilli flakes. Toast your bread, drizzle over the oil then pile the avocado on top.',
+        prepTime: 15,
         difficulty: 'Easy'
     },
     {
