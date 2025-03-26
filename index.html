@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MealTime Magic</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="website icon" type="png" href="images/websiteIcon.png">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <h1>Recipe Book <i class="fas fa-book-open"></i></h1>
+			<h3>Where every recipe tells a Scrumptuous Story</h3>
+            <p class="tagline">Where culinary dreams come to life</p>
+            
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">Recipes</a></li>
+                    <li><a href="#">Categories</a></li>
+                    <li><a href="#">Meal Planner</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+                <button id="add-recipe-btn" class="btn primary">Add Recipe</button>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <h2>Discover Amazing Recipes</h2>
+            <p>Browse our collection of delicious recipes curated by professional chefs</p>
+			<p>For you to view the recipes, just press edit on the recipe</p>
+        </section>
+
+        <section class="filter-section">
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="Search recipes...">
+                <button class="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="category-filters">
+                <button class="filter-btn active" data-category="all">All</button>
+                <button class="filter-btn" data-category="breakfast">Breakfast</button>
+                <button class="filter-btn" data-category="lunch">Lunch</button>
+                <button class="filter-btn" data-category="dinner">Dinner</button>
+                <button class="filter-btn" data-category="dessert">Dessert</button>
+            </div>
+        </section>
+
+        <section class="recipes-grid" id="recipes-container">
+            <!-- Recipes will be loaded here dynamically -->
+        </section>
+    </main>
+
+    <!-- Recipe Modal -->
+    <div class="modal" id="recipe-modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title">Add New Recipe</h2>
+            <form id="recipe-form">
+                <input type="hidden" id="recipe-id">
+                
+                <div class="form-group">
+                    <label for="category">Category</label>
+                    <select id="category" required>
+                        <option value="">Select a category</option>
+                        <option value="breakfast">Breakfast</option>
+                        <option value="lunch">Lunch</option>
+                        <option value="dinner">Dinner</option>
+                        <option value="dessert">Dessert</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="title">Recipe Title</label>
+                    <input type="text" id="title" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="image">Image URL</label>
+                    <input type="url" id="image" placeholder="https://example.com/image.jpg">
+                </div>
+                
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <textarea id="description" rows="3" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="ingredients">Ingredients (one per line)</label>
+                    <textarea id="ingredients" rows="5" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="instructions">Instructions</label>
+                    <textarea id="instructions" rows="5" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="prep-time">Prep Time (minutes)</label>
+                    <input type="number" id="prep-time" min="1" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="difficulty">Difficulty</label>
+                    <select id="difficulty" required>
+                        <option value="Easy">Easy</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Hard">Hard</option>
+                    </select>
+                </div>
+                
+                <div class="form-actions">
+                    <button type="submit" class="btn primary">Save Recipe</button>
+                    <button type="button" class="btn secondary" id="cancel-btn">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
