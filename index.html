@@ -11,17 +11,21 @@
 <body>
     <header class="header">
         <div class="header-content">
-            <h1>Recipe Book <i class="fas fa-book-open"></i></h1>
-			<h3>Where every recipe tells a Scrumptuous Story</h3>
+            <h1>MealTime Magic <i class="fas fa-utensils"></i></h1>
+            <h3>Where every recipe tells a Scrumptuous Story</h3>
             <p class="tagline">Where culinary dreams come to life</p>
             
             <nav class="navbar">
                 <ul class="nav-links">
-                    <li><a href="#" class="active">Home</a></li>
-                    <li><a href="#">Recipes</a></li>
-                    <li><a href="#">Categories</a></li>
-                    <li><a href="#">Meal Planner</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#recipes">Recipes</a></li>
+                    <li><a href="#categories">Categories</a></li>
+                    <li><a href="#planner">Meal Planner</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li class="contacts-dropdown">
+                        <a href="#contacts">Contacts <i class="fas fa-chevron-down"></i></a>
+                        
+                    </li>
                 </ul>
                 <button id="add-recipe-btn" class="btn primary">Add Recipe</button>
                 <div class="hamburger">
@@ -34,18 +38,18 @@
     </header>
 
     <main class="container">
-        <section class="hero">
+        <section id="home" class="hero">
             <h2>Discover Amazing Recipes</h2>
             <p>Browse our collection of delicious recipes curated by professional chefs</p>
-			<p>For you to view the recipes, just press edit on the recipe</p>
+            <p>For you to view the recipes, just press edit on the recipe</p>
         </section>
 
-        <section class="filter-section">
+        <section id="recipes" class="filter-section">
             <div class="search-box">
                 <input type="text" id="search-input" placeholder="Search recipes...">
                 <button class="search-btn"><i class="fas fa-search"></i></button>
             </div>
-            <div class="category-filters">
+            <div id="categories" class="category-filters">
                 <button class="filter-btn active" data-category="all">All</button>
                 <button class="filter-btn" data-category="breakfast">Breakfast</button>
                 <button class="filter-btn" data-category="lunch">Lunch</button>
@@ -57,6 +61,69 @@
         <section class="recipes-grid" id="recipes-container">
             <!-- Recipes will be loaded here dynamically -->
         </section>
+
+        <section id="planner" class="section">
+            <h2>Meal Planner</h2>
+            <p>✨ Coming Soon: MealTime Magic Planner ✨</p>
+            <p>Say goodbye to kitchen stress! Our upcoming AI-powered Meal Planner will:</p>
+            <p><ol>
+                <li>🍽️ Generate Weekly Menus – Get personalized meal plans based on your dietary needs, time constraints, and ingredient preferences</li>
+                <li>🛒 Auto-Generate Shopping Lists – Instantly create optimized grocery lists that reduce waste and save money</li>
+                <li>⏱️ Sync with Your Schedule – Busy Wednesday? The planner will suggest quick 20-minute meals when you’re short on time</li>
+                <li>♻️ Leftover Remix Mode – Get creative recipe ideas to transform leftovers into exciting new dishes</li>
+                <li>dishes
+
+                    🔮 Seasonal Suggestions – Automatically highlights recipes using in-season produce for peak flavor and value</li>
+            </ol></p>
+            <div class="coming-soon">
+                <i class="fas fa-clock"></i>
+                <p>Launching this fall – join our newsletter for early access!</p>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <h2>About MealTime Magic</h2>
+            <p>We're passionate about making cooking accessible and enjoyable for everyone.</p>
+            <p>MealTime Magic is your ultimate culinary companion, designed to inspire home cooks and food enthusiasts with delicious, easy-to-follow recipes. Our mission is to make cooking enjoyable, accessible, and stress-free for everyone—whether you're a beginner or an experienced chef.</p>
+            <p>We curate a diverse collection of recipes, from quick breakfasts to gourmet dinners and decadent desserts, all tested and perfected to ensure success in your kitchen. Each recipe includes clear instructions, helpful tips, and beautiful visuals to guide you every step of the way.</p>
+            <p>Beyond recipes, MealTime Magic fosters a vibrant community where food lovers share their creations, swap cooking hacks, and celebrate the joy of homemade meals. With features like meal planning (coming soon!), seasonal recommendations, and interactive cooking guides, we’re here to transform everyday cooking into a magical experience.</p>
+            <div class="about-content">
+                <div class="about-card">
+                    <i class="fas fa-heart"></i>
+                    <h3>Our Mission</h3>
+                    <p>At MealTime Magic, we believe great food should be simple, joyful, and accessible to everyone. Our mission is to:
+
+                        Demystify cooking with foolproof, well-tested recipes
+                        
+                        Celebrate creativity in the kitchen with seasonal, adaptable dishes
+                        
+                        Build confidence in home cooks through clear instructions and pro tips
+                        
+                        Reduce food waste with smart meal planning and flexible recipes
+                        
+                        We're not just sharing recipes—we're cultivating lifelong cooking skills and memorable dining experiences.</p>
+                </div>
+                <div class="about-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Our Community</h3>
+                    <p>The magic happens when food lovers connect! Our growing community:
+                        ✨ Shares recipe variations and kitchen wins
+                        🍽️ Swaps time-saving cooking hacks
+                        📸 Tags @a.i.r_borne in their creations
+                        💬 Votes on upcoming recipe features
+                        
+                        "The comments section is my favorite cooking class!"
+                        Brian Njoroge, member since 2022</p>
+                </div>
+                <div class="about-card">
+                    <i class="fas fa-utensils"></i>
+                    <h3>Our Recipes</h3>
+                    <p>Tested and perfected by our team of culinary experts</p>
+                </div>
+            </div>
+        </section>
+
+        
     </main>
 
     <!-- Recipe Modal -->
@@ -124,6 +191,34 @@
             </form>
         </div>
     </div>
+
+    <footer class="footer">
+        <section id="contacts" class="section">
+            <h2>Contact Us</h2>
+            <div class="contact-methods">
+                <div class="contact-card">
+                    <i class="fab fa-instagram"></i>
+                    <h3>Instagram</h3>
+                    <p>📲</p>
+                    <a href="https://instagram.com/a.i.r_borne" target="_blank">a.i.r_borne</a>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-phone"></i>
+                    <h3>Phone</h3>
+                    <a href="tel:+254706465469">0706465469</a>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <a href="mailto:geraldjuma06@gmail.com">geraldjuma06@gmail.com</a>
+                </div>
+            </div>
+        </section>
+        <div class="footer-bottom">
+            <p>&copy; 2025 MealTime Magic. All rights reserved.</p>
+            <p>By Gerald Juma</p>
+        </div>
+    </footer>
 
     <script src="js/index.js"></script>
 </body>
