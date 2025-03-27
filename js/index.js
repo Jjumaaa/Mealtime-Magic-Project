@@ -24,7 +24,7 @@ const sampleRecipes = [
         id: 1,
         title: 'Avocado Toast',
         category: 'breakfast',
-        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc9AIvAc6dkD5GTVhVASi91F4Jc4n7AbOFhw&s',
+        image: 'https://images.unsplash.com/photo-1628556820645-63ba5f90e6a2?q=80&w=1664&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
         description: 'Simple yet delicious avocado toast with a sprinkle of chili flakes.',
         ingredients: '2 slices bread\n1 ripe avocado\n1 tbsp olive oil\nSalt and pepper\nChili flakes',
         instructions: 'Cut the avocado in half and carefully remove its stone, then scoop out the flesh into a bowl. Squeeze in the lemon juice then mash with a fork to your desired texture. Season to taste with sea salt, black pepper and chilli flakes. Toast your bread, drizzle over the oil then pile the avocado on top.',
